@@ -5,7 +5,7 @@ int main()
     char uzklaus;
     atgal:
     cout << "Ar norite nuskaityti duomenis iš failo kursiokai.txt? t/n";
-    try{ uzklaus = gaut_ivesti(CHAR)[0]; }
+    try{ uzklaus = gaut_ivesti(CHAR)[0]; } //raktazodis throw yra funkcijos viduje
     catch(const char* klaida)
     {
         cerr << klaida;
