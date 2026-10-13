@@ -21,4 +21,4 @@ Failų kūrimas      Failų skaitymas      Studentų rūšiavimas      Surūšiu
 45,980             45,754               23,041                   24,303
 
 5 įrašas (1 bandymas, minutėmis):
-7.55635            9.38785              5.08                     4.49973
+7,55635            9,38785              5,08                     4,49973
