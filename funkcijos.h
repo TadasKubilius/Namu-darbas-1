@@ -1,54 +1,42 @@
-#ifndef FUNKCIJOS_H
-#define FUNKCIJOS_H
-#define CHAR 0
-#define STRING 1
-//pragma once alternatyva
+#pragma once
 #include <iostream>
-#include <fstream>
-#include <iomanip>
+#include <cstdlib>
 #include <string>
-#include <cmath>
+#include <fstream>
+#include <random>
 #include <vector>
-#include <deque>
-#include <stdio.h>
-#include <stdint.h> //naudojami mazesnio dydzio (1 baito) sveikieji sk. atminties taupymui
+#include <stdint.h>
+#include <chrono>
+#define IRASAS "penktas_irasas.txt"
+#define STUD_SK 10'000'000
+//pirmas_irasas.txt, antras_irasas.txt, trecias_irasas.txt, ketvirtas_irasas.txt, penktas_irasas.txt
+//1000,             10'000,             100'000,            1'000'000,          10'000'000
 
-using std::cout;
-using std::cin;
-using std::cerr;
 using std::string;
 using std::vector;
-using std::deque;
-using std::left;
-using std::right;
-using std::setw;
-using std::fixed;
-using std::setprecision;
+using std::cerr;
+using std::cout;
+using std::ifstream;
+using std::ofstream;
 
-string gaut_ivesti(uint8_t);
-uint8_t gaut_ivesti_int(uint8_t);
+void generavimas();
 
 class studentas
 {
     string vardas, pavard;
-    deque <int8_t> nd;
+    vector <int8_t> nd;
     uint8_t egz;
-    float galutinis_vid, galutinis_med;
+    float galutinis_vid;
 
-    public:
+public:
     static uint8_t nd_skaicus;
     static unsigned int zymeklis;
-    static bool ar_skaityt_faila;
-    uint8_t pavard_vard_dyd;
     studentas();
-    studentas(string, string, deque<int8_t>, uint8_t);
+    studentas(ifstream&);
     studentas(const studentas&);
     ~studentas();
     void clear();
-    string gaut_pavard();
+    float gaut_galut();
+    string gaut_pavard_vard();
     void galutinio_skaic_vid();
-    void galutinio_skaic_med();
-    void ivestis();
-    void isvestis();
 };
-#endif
