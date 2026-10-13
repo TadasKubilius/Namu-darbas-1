@@ -1,0 +1,24 @@
+Rezultatai su Vector konteineriu:
+Failų kūrimas      Failų skaitymas      Studentų rūšiavimas      Surūšiuotų studentų išvedimas
+1 įrašas (3 bandymai, milisekundėmis):
+135                44                   21                       34
+136                42                   18                       23
+153                37                   23                       27
+
+2 įrašas (3 bandymai, milisekundėmis):
+513                514                  262                      275
+604                475                  283                      253
+561                501                  269                      243
+
+3 įrašas (3 bandymai, sekundėmis):
+5,023              5,296                2,437                    2,434
+4,672              4,963                2,311                    2,364
+4,667              5,017                2,324                    2,388
+
+4 įrašas (3 bandymai, sekundėmis):
+45,013             45,549               23,040                   25,172
+45,182             45,243               22,832                   24,471
+45,980             45,754               23,041                   24,303
+
+5 įrašas (1 bandymas, minutėmis):
+7,55635            9,38785              5,08                     4,49973
