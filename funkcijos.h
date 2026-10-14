@@ -7,6 +7,8 @@
 #include <vector>
 #include <stdint.h>
 #include <chrono>
+#include <list>
+#include <deque>
 #define IRASAS "penktas_irasas.txt"
 #define STUD_SK 10'000'000
 //pirmas_irasas.txt, antras_irasas.txt, trecias_irasas.txt, ketvirtas_irasas.txt, penktas_irasas.txt
@@ -14,6 +16,8 @@
 
 using std::string;
 using std::vector;
+using std::list;
+using std::deque;
 using std::cerr;
 using std::cout;
 using std::ifstream;
