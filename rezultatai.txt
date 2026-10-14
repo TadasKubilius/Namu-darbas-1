@@ -1,5 +1,5 @@
-Rezultatai su Vector konteineriu:
 Failų kūrimas      Failų skaitymas      Studentų rūšiavimas      Surūšiuotų studentų išvedimas
+Rezultatai su Vector konteineriu:
 1 įrašas (3 bandymai, milisekundėmis):
 135                44                   21                       34
 136                42                   18                       23
@@ -16,9 +16,59 @@ Failų kūrimas      Failų skaitymas      Studentų rūšiavimas      Surūšiu
 4,667              5,017                2,324                    2,388
 
 4 įrašas (3 bandymai, sekundėmis):
-45,013             45,549               23,040                   25,172
+45,013             45,549               23,04                    25,172
 45,182             45,243               22,832                   24,471
-45,980             45,754               23,041                   24,303
+45,98              45,754               23,041                   24,303
 
 5 įrašas (1 bandymas, minutėmis):
 7,55635            9,38785              5,08                     4,49973
+
+
+Rezultatai su List konteineriu:
+1 įrašas (3 bandymai, milisekundėmis):
+157                30                   9                        29
+138                28                   10                       27
+136                34                   12                       37
+
+2 įrašas (3 bandymai, milisekundėmis):
+545                323                  99                       260
+556                369                  105                      288
+541                316                  109                      288
+
+3 įrašas (3 bandymai, sekundėmis): 
+5,063              3,638                1,135                    2,608
+4,846              3,437                1,004                    2,522
+4,779              3,699                1,065                    2,535
+
+4 įrašas (3 bandymai, sekundėmis):
+47,716             34,442               10,267                   25,357
+48,149             34,308               10,097                   25,055
+46,549             34,739               10,306                   25,478
+
+5 įrašas (1 bandymas, minutėmis):
+6,26115            4,553617             1,7101167                3,862483
+
+
+Rezultatai su Deque konteineriu:
+1 įrašas (3 bandymai, milisekundėmis):
+120                26                   8                        24
+134                26                   8                        23
+122                27                   8                        25
+
+2 įrašas (3 bandymai, milisekundėmis):
+447                255                  87                       208
+444                270                  86                       200
+464                264                  98                       222
+
+3 įrašas (3 bandymai, sekundėmis):
+4,154              3,019                0,874                    2,076
+3,854              2,803                0,856                    2,003
+3,81               2,778                0,832                    2,134
+
+4 įrašas (3 bandymai, sekundėmis):
+49,487             34,238               10,245                   25,918
+48,552             33,802               10,323                   25,612
+48,721             34,104               10,39                    25,813
+
+5 įrašas (1 bandymas, minutėmis):
+7,954783           5,6901               2,138183                 5,182783
