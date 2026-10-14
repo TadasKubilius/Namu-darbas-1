@@ -14,7 +14,7 @@ int main()
         cerr << klaida;
         return -1;
     }
-    vector<studentas> grupe;
+    deque<studentas> grupe;
     laikas = std::chrono::high_resolution_clock::now();
     ifstream duom(IRASAS);
     if (!duom)
@@ -32,8 +32,8 @@ int main()
     }
     duom.close();
     cout << "Failu skaitymas: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - laikas).count() << " milisekundziu\n";
-    vector<studentas> kietiakai;
-    vector<studentas> vargsiukai;
+    deque<studentas> kietiakai;
+    deque<studentas> vargsiukai;
     laikas = std::chrono::high_resolution_clock::now();
     for (studentas stud : grupe)
     { 
