@@ -1,3 +1,4 @@
+1 strategija: 
 Failų kūrimas      Failų skaitymas      Studentų rūšiavimas      Surūšiuotų studentų išvedimas
 Rezultatai su Vector konteineriu:
 1 įrašas (3 bandymai, milisekundėmis):
@@ -72,3 +73,36 @@ Rezultatai su Deque konteineriu:
 
 5 įrašas (1 bandymas, minutėmis):
 7,954783           5,6901               2,138183                 5,182783
+
+2 strategija:
+Rezultatai su Vector konteineriu:
+1 įrašas (3 bandymai, milisekundėmis):
+135                42                   116                      27
+189                45                   109                      31
+154                44                   111                      33
+
+2 įrašas (3 bandymai, milisekundėmis):
+
+Rezultatai su sąrašu (list) konteineriu:
+1 įrašas (3 bandymai, milisekundėmis):
+132                38                   4                        35
+168                34                   4                        40
+156                30                   4                        36
+
+2 įrašas (3 bandymai, milisekundėmis):
+569                313                  39                       258
+579                336                  48                       271
+578                315                  38                       241
+
+3 įrašas (3 bandymai, sekundėmis):
+4,991              3,638                0,379                    2,741
+4,791              3,395                0,398                    2,614
+4,866              3,404                0,410                    2,615
+
+4 įrašas (3 bandymai, sekundėmis):
+47,161             34,496               3,908                    25,930
+46,675             34,324               3,834                    25,307
+46,434             34,967               3,928                    25,747
+
+5 įrašas (1 bandymas, minutėmis):
+7,70657            5,6109               0,8887                   5,12323
