@@ -62,7 +62,7 @@ void studentas::clear()
 }
 studentas::studentas(std::ifstream& duom)
 {
-	char skait1 = '\0', skait2 = '\0';
+	char skait1 = '\0';
 	bool laikas_rasyt_pavard = true, laikas_rasyt_vard = false;
 	uint8_t sis_nd_skaic = 0;
 	while (true)
@@ -106,7 +106,6 @@ studentas::studentas(std::ifstream& duom)
 			{
 				nd.push_back(10);
 			}
-			skait2 = '1';
 			sis_nd_skaic++;
 		}
 		else if (sis_nd_skaic == nd_skaicus)
@@ -132,7 +131,6 @@ studentas::studentas(std::ifstream& duom)
 				break;
 			}
 		}
-		skait2 = skait1;
 	}
 }
 void studentas::galutinio_skaic_vid()
