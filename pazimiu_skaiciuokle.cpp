@@ -1,7 +1,7 @@
 #include "funkcijos.h"
 
 int main()
-{   
+{
     auto laikas = std::chrono::high_resolution_clock::now();
     system("type nul > " IRASAS " & type nul > kietiakai.txt & type nul > vargsiukai.txt");
     try
@@ -14,7 +14,7 @@ int main()
         cerr << klaida;
         return -1;
     }
-    deque<studentas> grupe;
+    list<studentas> grupe;
     laikas = std::chrono::high_resolution_clock::now();
     ifstream duom(IRASAS);
     if (!duom)
@@ -31,23 +31,20 @@ int main()
         A.clear();
     }
     duom.close();
+    duom.clear();
     cout << "Failu skaitymas: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - laikas).count() << " milisekundziu\n";
-    deque<studentas> kietiakai;
-    deque<studentas> vargsiukai;
+    list<studentas> vargsiukai;
     laikas = std::chrono::high_resolution_clock::now();
-    for (studentas stud : grupe)
-    { 
-        if (stud.gaut_galut() >= 5.0)
+    for (std::list<studentas>::iterator it = grupe.begin(); it != grupe.end(); )
+    {
+        if ((*it).gaut_galut() < 5.0)
         {
-            kietiakai.push_back(stud);
+            vargsiukai.push_back(*it);
+            it = grupe.erase(it);
         }
-        else
-        {
-            vargsiukai.push_back(stud);
-        }
+        else { std::advance(it, 1); }
     }
     cout << "Studentu rusiavimas: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - laikas).count() << " milisekundziu\n";
-    grupe.clear();
     laikas = std::chrono::high_resolution_clock::now();
     ofstream kiet("kietiakai.txt");
     if (!kiet)
@@ -56,12 +53,13 @@ int main()
         return -1;
     }
     kiet << "Pavarde      Vardas      Galutinis (vid.)\n";
-    for (studentas stud : kietiakai)
+    for (studentas stud : grupe)
     {
         kiet << stud.gaut_pavard_vard() << "      " << stud.gaut_galut() << '\n';
     }
-    kietiakai.clear();
+    grupe.clear();
     kiet.close();
+    kiet.clear();
     ofstream varg("vargsiukai.txt");
     if (!varg)
     {
@@ -76,5 +74,6 @@ int main()
     cout << "Surusiuotu studentu isvedimas: " << std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - laikas).count() << " milisekundziu\n";
     vargsiukai.clear();
     varg.close();
+    varg.clear();
     return 0;
 }
