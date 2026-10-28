@@ -10,8 +10,10 @@
 #include <list>
 #include <deque>
 #include <iterator>
-#define IRASAS "ketvirtas_irasas.txt"
-#define STUD_SK 1'000'000
+#include <algorithm>
+#include <execution>
+#define IRASAS "trecias_irasas.txt"
+#define STUD_SK 100'000
 //pirmas_irasas.txt, antras_irasas.txt, trecias_irasas.txt, ketvirtas_irasas.txt, penktas_irasas.txt
 //1000,             10'000,             100'000,            1'000'000,          10'000'000
 
