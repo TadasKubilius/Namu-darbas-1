@@ -10,5 +10,5 @@ Atsisiųskite programos instaliuotoją „releases“ sekcijoje.
 
 Studentų rūšiavimą galima optimizuoti tiek atminties, tiek greičio prasme, naudojant `std::stable_partition` funkciją, tokiu būdu duomenys yra paskirstomi į dvi dalis viename konteineryje.
 
-Detalūs užduoties rezultatai yra pateiktyje rezultatai.txt faile.
+Detalūs užduoties rezultatai yra pateikti rezultatai.txt faile.
 
