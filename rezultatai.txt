@@ -141,3 +141,5 @@ Rezultatai su sąrašo konteineriu:
 5 įrašas (1 bandymas, minutėmis):
 7,70657            5,6109               0,8887                   5,12323
 (sąrašo konteineris itin efektyvus su 2 strategija)*
+
+Studentų rūšiavimą vektoriaus konteineryje itin pagreitina std::stable_patition tiek greičio, tiek atminties atžvilgiais.
